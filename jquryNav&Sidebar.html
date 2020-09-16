@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SideBar By JQuery</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<style type="text/css">
+h3{
+position:absolute;
+padding:5px;
+}
+p{
+width:40%;
+height:100%;
+position:absolute;
+background-color:black;
+color:white;
+padding:3px 5px;
+display:none;
+}
+button{
+background-color:green;
+display:inline;
+border:none;
+font-size:20px;
+padding-left:15px;
+}
+#nav{
+background-color:green;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#btn").click(function(){
+$("p").toggle();
+
+});
+});
+
+</script>
+</head>
+<body>
+<div id="nav" >
+<button id="btn" ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-hdd-stack-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2H2zm.5 3a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2 0a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm.5 3a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2 0a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+</svg></button>
+<button>Home</button>
+<button>About</button>
+<button>Contact</button>
+<button>Blog</button>
+</div>
+<div>
+<h3>jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much more. It's based on the existing CSS Selectors, and in addition, it has some own custom selectors.</h3>
+<p>An id should be unique within a page, so you should use the #id selector when you want to find a single, unique element.</p>
+</div>
+</body>
+</html>
